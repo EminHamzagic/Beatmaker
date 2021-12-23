@@ -9,7 +9,81 @@
     <title>Beatmaker</title>
 </head>
 <body>
-    
+    <div class="sequencer">
+        <div class="kick-track">
+            <div class="controls">
+                <h1>Kick</h1>
+                <button data-track="0" class="mute kick-volume"><i class="fas fa-volume-mute"></i></button>
+                <select name="kick-select" id="kick-select">
+                    <option value="./allSounds/kick-classic.wav">Classic Kick</option>
+                    <option value="./allSounds/kick-808.wav">808 Kick</option>
+                    <option value="./allSounds/kick-big.wav">Big Kick</option>
+                    <option value="./allSounds/kick-cultivator.wav">Cultivator Kick</option>
+                    <option value="./allSounds/kick-deep.wav">Deep Kick</option>
+                </select>
+            </div>
+            <div class="kick">
+                <div class="pad kick-pad b0"></div>
+                <div class="pad kick-pad b1"></div>
+                <div class="pad kick-pad b2"></div>
+                <div class="pad kick-pad b3"></div>
+                <div class="pad kick-pad b4"></div>
+                <div class="pad kick-pad b5"></div>
+                <div class="pad kick-pad b6"></div>
+                <div class="pad kick-pad b7"></div>
+            </div>
+        </div>
+        <div class="snare-track">
+            <div class="controls">
+                <h1>Snare</h1>
+                <button data-track="1" class="mute snare-volume"><i class="fas fa-volume-mute"></i></button>
+                <select name="snare-select" id="snare-select">
+                    <option value="./allSounds/snare-analog.wav">Analog Snare</option>
+                    <option value="./allSounds/snare-808.wav">808 Snare</option>
+                    <option value="./allSounds/snare-big.wav">Big Snare</option>
+                    <option value="./allSounds/snare-electro.wav">Electro Snare</option>
+                    <option value="./allSounds/snare-lofi01.wav">Lofi Snare</option>
+                </select>
+            </div>
+            <div class="snare">
+                <div class="pad snare-pad b0"></div>
+                <div class="pad snare-pad b1"></div>
+                <div class="pad snare-pad b2"></div>
+                <div class="pad snare-pad b3"></div>
+                <div class="pad snare-pad b4"></div>
+                <div class="pad snare-pad b5"></div>
+                <div class="pad snare-pad b6"></div>
+                <div class="pad snare-pad b7"></div>
+            </div>
+        </div>
+        <div class="hihat-track">
+            <div class="controls">
+                <h1>Hihat</h1>
+                <button data-track="2" class="mute hihat-volume"><i class="fas fa-volume-mute"></i></button>
+                <select name="hihat-select" id="hihat-select">
+                    <option value="./allSounds/hihat-analog.wav">Analog Hihat</option>
+                    <option value="./allSounds/hihat-808.wav">808 Hihat</option>
+                    <option value="./allSounds/hihat-ring.wav">Ring Hihat</option>
+                    <option value="./allSounds/hihat-electro.wav">Electro Hihat</option>
+                    <option value="./allSounds/hihat-dist01.wav">Dist Hihat</option>
+                </select>
+            </div>
+            <div class="hihat">
+                <div class="pad hihat-pad b0"></div>
+                <div class="pad hihat-pad b1"></div>
+                <div class="pad hihat-pad b2"></div>
+                <div class="pad hihat-pad b3"></div>
+                <div class="pad hihat-pad b4"></div>
+                <div class="pad hihat-pad b5"></div>
+                <div class="pad hihat-pad b6"></div>
+                <div class="pad hihat-pad b7"></div>
+            </div>
+        </div>
+        <button class="play">Play</button>
+    </div>
+    <audio class="kick-start" src="./allSounds/kick-classic.wav"></audio>
+    <audio class="snare-start" src="./allSounds/snare-analog.wav"></audio>
+    <audio class="hihat-start" src="./allSounds/crash-acoustic.wav"></audio>
     <script src="app.js"></script>
 </body>
 </html>
