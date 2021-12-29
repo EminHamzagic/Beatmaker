@@ -108,3 +108,7 @@ select{
         transform: scale(1.2);
     }
 }
+
+.mute.active{
+    background: rgb(185, 185, 185);
+}
